@@ -45,7 +45,11 @@ return [
 
         'local' => [
             'driver' => 's3',
-            'root' => storage_path('app'),
+            'key' => env('AWS_KEY'),
+            'secret' => env('AWS_SECRET'),
+            'region' => env('AWS_REGION'),
+            'bucket' => env('AWS_BUCKET'),
+            'root' => env('AWS_ROOT'),
         ],
 
         'public' => [
