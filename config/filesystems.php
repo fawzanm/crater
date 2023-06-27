@@ -65,7 +65,7 @@ return [
             'secret' => env('AWS_SECRET'),
             'region' => env('AWS_REGION'),
             'bucket' => env('AWS_BUCKET'),
-            'root' => 'app/public',
+            'root' => 'public',
             'visibility' => 'public',
         ],
 
