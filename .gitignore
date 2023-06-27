@@ -8,6 +8,7 @@
 Homestead.json
 Homestead.yaml
 .env
+.env.production
 .phpunit.result.cache
 .rnd
 /.expo
@@ -18,3 +19,4 @@ Homestead.yaml
 /.scribe
 !storage/fonts/.gitkeep
 .DS_Store
+vapor.yml

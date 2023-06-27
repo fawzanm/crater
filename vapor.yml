@@ -2,10 +2,11 @@ id: 48980
 name: salfade-accounts
 environments:
     production:
+        domain: accounts.fawzan.xyz
         memory: 1024
         cli-memory: 512
         runtime: 'php-8.0:al2'
         build:
-            - 'composer install --no-dev'
-            - 'php artisan event:cache'
+            - 'composer install'
+#            - 'php artisan event:cache'
           # - 'npm ci && npm run build && rm -rf node_modules'

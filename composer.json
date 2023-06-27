@@ -8,7 +8,7 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "php": "^8.0",
+    "php": "^8.2",
     "aws/aws-sdk-php": "^3.142",
     "barryvdh/laravel-dompdf": "^0.9.0",
     "crater-invoice/modules": "^1.0.0",
@@ -29,6 +29,7 @@
     "lavary/laravel-menu": "^1.8",
     "league/flysystem-aws-s3-v3": "^1.0",
     "predis/predis": "^1.1",
+    "pusher/pusher-php-server": "^7.2",
     "silber/bouncer": "v1.0.0-rc.10",
     "spatie/flysystem-dropbox": "^1.2",
     "spatie/laravel-backup": "^6.11",
@@ -87,7 +88,7 @@
       "pestphp/pest-plugin": true
     },
     "platform": {
-      "php": "8.0"
+      "php": "8.2"
     }
   },
   "extra": {
