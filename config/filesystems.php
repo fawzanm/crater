@@ -52,12 +52,23 @@ return [
             'root' => env('AWS_ROOT'),
         ],
 
+//        'public' => [
+//            'driver' => 'local',
+//            'root' => storage_path('app/public'),
+//            'url' => env('APP_URL').'/storage',
+//            'visibility' => 'public',
+//        ],
+
         'public' => [
-            'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'driver' => 's3',
+            'key' => env('AWS_KEY'),
+            'secret' => env('AWS_SECRET'),
+            'region' => env('AWS_REGION'),
+            'bucket' => env('AWS_BUCKET'),
+            'root' => 'app/public',
             'visibility' => 'public',
         ],
+
 
         's3' => [
             'driver' => 's3',
@@ -69,8 +80,13 @@ return [
         ],
 
         'media' => [
-            'driver' => 'local',
-            'root' => public_path('media'),
+            'driver' => 's3',
+            'key' => env('AWS_KEY'),
+            'secret' => env('AWS_SECRET'),
+            'region' => env('AWS_REGION'),
+            'bucket' => env('AWS_BUCKET'),
+            'root' => 'media',
+            'visibility' => 'public',
         ],
 
         'doSpaces' => [
