@@ -44,7 +44,7 @@ return [
     'disks' => [
 
         'local' => [
-            'driver' => 'local',
+            'driver' => 's3',
             'root' => storage_path('app'),
         ],
 
