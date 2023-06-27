@@ -85,8 +85,8 @@ return [
             'secret' => env('AWS_SECRET'),
             'region' => env('AWS_REGION'),
             'bucket' => env('AWS_BUCKET'),
-            'root' => public_path('media'),
-
+            'root' => 'media',
+            'visibility' => 'public',
         ],
 
         'doSpaces' => [
