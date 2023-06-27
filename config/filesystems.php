@@ -85,7 +85,7 @@ return [
             'secret' => env('AWS_SECRET'),
             'region' => env('AWS_REGION'),
             'bucket' => env('AWS_BUCKET'),
-            'root' => 'media',
+            'root' => 'local/media',
             'visibility' => 'public',
         ],
 
